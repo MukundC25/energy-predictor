@@ -51,15 +51,14 @@ st.markdown("""
     }
     
     .main-header {
-        background: linear-gradient(135deg, #00d4aa 0%, #00b894 25%, #0984e3 50%, #6c5ce7 75%, #a29bfe 100%);
-        background-size: 300% 300%;
-        animation: gradientShift 8s ease infinite;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+        background-size: 100% 100%;
         padding: 2.5rem 3rem;
         border-radius: 24px;
         margin-bottom: 2rem;
         position: relative;
         overflow: hidden;
-        box-shadow: 0 20px 60px rgba(0, 212, 170, 0.3);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
     }
     .main-header::before {
         content: '';
@@ -122,7 +121,7 @@ st.markdown("""
     .main-header .badge-dot {
         width: 6px;
         height: 6px;
-        background: #00ff88;
+        background: #e94560;
         border-radius: 50%;
         animation: pulse 2s ease infinite;
     }
@@ -141,7 +140,7 @@ st.markdown("""
     .section-title .icon {
         width: 32px;
         height: 32px;
-        background: linear-gradient(135deg, #00d4aa, #0984e3);
+        background: #e94560;
         border-radius: 10px;
         display: flex;
         align-items: center;
@@ -149,7 +148,7 @@ st.markdown("""
         color: white;
         font-size: 0.9rem;
         font-weight: 600;
-        box-shadow: 0 4px 15px rgba(0, 212, 170, 0.3);
+        box-shadow: 0 4px 15px rgba(233, 69, 96, 0.3);
     }
     
     .metric-card {
@@ -170,14 +169,14 @@ st.markdown("""
         left: 0;
         right: 0;
         height: 3px;
-        background: linear-gradient(90deg, #00d4aa, #0984e3, #6c5ce7);
+        background: #e94560;
         opacity: 0;
         transition: opacity 0.3s;
     }
     .metric-card:hover {
         transform: translateY(-6px);
-        border-color: rgba(0, 212, 170, 0.3);
-        box-shadow: 0 20px 40px rgba(0, 212, 170, 0.15);
+        border-color: rgba(233, 69, 96, 0.3);
+        box-shadow: 0 20px 40px rgba(233, 69, 96, 0.15);
     }
     .metric-card:hover::before {
         opacity: 1;
@@ -186,10 +185,7 @@ st.markdown("""
         font-family: 'JetBrains Mono', monospace;
         font-size: 2.2rem;
         font-weight: 700;
-        background: linear-gradient(135deg, #00d4aa, #0984e3);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        color: #ffffff;
     }
     .metric-card .label {
         font-size: 0.75rem;
@@ -204,7 +200,7 @@ st.markdown("""
         background: rgba(255,255,255,0.02);
         backdrop-filter: blur(10px);
         border: 1px solid rgba(255,255,255,0.06);
-        border-left: 3px solid #00d4aa;
+        border-left: 3px solid #e94560;
         border-radius: 12px;
         padding: 1.1rem 1.4rem;
         margin: 0.6rem 0;
@@ -215,7 +211,7 @@ st.markdown("""
     }
     .insight-card:hover {
         background: rgba(255,255,255,0.04);
-        border-left-color: #0984e3;
+        border-left-color: #f39c12;
         transform: translateX(4px);
     }
     .insight-card.warning {
@@ -228,9 +224,9 @@ st.markdown("""
     }
     
     .prediction-result {
-        background: linear-gradient(135deg, rgba(0, 212, 170, 0.15), rgba(9, 132, 227, 0.15));
+        background: rgba(233, 69, 96, 0.1);
         backdrop-filter: blur(20px);
-        border: 1px solid rgba(0, 212, 170, 0.3);
+        border: 1px solid rgba(233, 69, 96, 0.3);
         padding: 2rem;
         border-radius: 20px;
         text-align: center;
@@ -252,10 +248,7 @@ st.markdown("""
         font-family: 'JetBrains Mono', monospace;
         font-size: 3.5rem;
         font-weight: 700;
-        background: linear-gradient(135deg, #00d4aa, #00ff88);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        color: #ffffff;
         position: relative;
         z-index: 1;
     }
@@ -285,10 +278,7 @@ st.markdown("""
         margin-top: 4rem;
     }
     .footer strong {
-        background: linear-gradient(135deg, #00d4aa, #0984e3);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        color: #e94560;
     }
     
     /* Streamlit overrides for dark theme */
@@ -304,21 +294,22 @@ st.markdown("""
         color: #e2e8f0 !important;
     }
     .stSlider > div > div > div {
-        background: linear-gradient(90deg, #00d4aa, #0984e3) !important;
+        background: #e94560 !important;
     }
     .stButton > button {
-        background: linear-gradient(135deg, #00d4aa, #0984e3) !important;
+        background: #e94560 !important;
         border: none !important;
         border-radius: 12px !important;
         padding: 0.75rem 2rem !important;
         font-weight: 600 !important;
         font-size: 1rem !important;
         transition: all 0.3s ease !important;
-        box-shadow: 0 4px 20px rgba(0, 212, 170, 0.3) !important;
+        box-shadow: 0 4px 20px rgba(233, 69, 96, 0.3) !important;
     }
     .stButton > button:hover {
         transform: translateY(-2px) !important;
-        box-shadow: 0 8px 30px rgba(0, 212, 170, 0.4) !important;
+        background: #c73e54 !important;
+        box-shadow: 0 8px 30px rgba(233, 69, 96, 0.4) !important;
     }
     .stExpander {
         background: rgba(255,255,255,0.02) !important;
@@ -406,9 +397,9 @@ with col1:
         opacity=0.7
     )
     fig_scatter.update_traces(marker=dict(
-        color='#00d4aa', 
+        color='#e94560', 
         size=7,
-        line=dict(width=1, color='rgba(0,212,170,0.3)')
+        line=dict(width=1, color='rgba(233,69,96,0.3)')
     ))
     fig_scatter.add_trace(go.Scatter(
         x=[y_test.min(), y_test.max()],
@@ -436,7 +427,7 @@ with col2:
         'Coefficient': model.coef_
     }).sort_values('Coefficient', key=abs, ascending=True)
     
-    colors = ['#f59e0b' if c < 0 else '#00d4aa' for c in coef_df['Coefficient']]
+    colors = ['#f39c12' if c < 0 else '#27ae60' for c in coef_df['Coefficient']]
     
     fig_coef = go.Figure(go.Bar(
         x=coef_df['Coefficient'],
